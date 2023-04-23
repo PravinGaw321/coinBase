@@ -1,0 +1,18 @@
+.footer{
+    background: #121212;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer .email span{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer .copyright{
+    color: #ffffff;
+}

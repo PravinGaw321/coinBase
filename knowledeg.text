@@ -1,0 +1,18 @@
+1. if you want to customize the list of middleware, you can supply an array of middleware functions to configureStore:
+const store = configureStore({
+  reducer: rootReducer,
+  middleware: [thunk, logger],
+  const middleware = [thunk, immutableStateInvariant, serializableStateInvariant]
+  --- or ---
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+  -- or --
+    middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+        serializableCheck: false,
+    }),
+})
+
+- getDefaultMiddleware is useful if you want to add some custom middleware, but also still want to have the default middleware added as well:
+
+
+2. 

@@ -1,0 +1,43 @@
+.home{
+    background: #b6b6b6;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+.search-sec{
+    width: 100%;
+    text-align: center;
+}
+.search-sec input{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-family: sans-serif;
+}
+.main-sec{
+    margin-top: 40px;
+}
+.tabname{
+    background: transparent;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.tabname:hover{
+    background: #ffffff;
+    transition: 0.2s all linear;
+    color: #121212;
+    cursor: pointer;
+}
+.split-sections{
+    margin-top: 30px;
+}
