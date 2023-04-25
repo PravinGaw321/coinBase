@@ -1,0 +1,88 @@
+.coincategory{
+    display: flex;
+    align-items: center;
+}
+.coincategory ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.coincategory ul li{
+    background: #ffffff;
+    color: #000;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-bottom: 11px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.coincategory ul li span{
+    font-size: 14px;
+    font-weight: 500;
+}
+.coinheading{
+    font-size: 27px;
+    font-weight: 900;
+    font-family: sans-serif;
+    /* margin-bottom: 20px; */
+}
+.coinlist{
+    
+}
+.coinlist ul{
+    font-size: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.coinlist ul li{
+    font-size: 14px;
+    border: 2px solid #ffffff;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 23%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+.coinlist ul li .name{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+}
+.accordion{
+    /* border: 1px solid #fff; */
+    width: 100%;
+    border-radius: 10px;
+}
+.accordion .openbtn{
+    width: 100%;
+    background-color: lightblue;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+
+}
+.accordion .contentarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: "top 1s ease-in-out";
+    border: 1px solid #fff;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.coinlist ul li .id{
+    font-size: 20px;
+    text-align: left;
+    font-weight: 800;
+}
+
+.coinlist ul li .symbol{
+    text-align: center;
+    font-size: 19px;
+}
+
