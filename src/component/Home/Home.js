@@ -6,6 +6,7 @@ import Coin from "../Coin/Coin";
 import Nft from "../Nft/Nft";
 import Exchangerate from "../Exchange_rate/Exchange_rate";
 import Trending from "../Trending/Trending";
+import Search from "../SearchBar/Search";
 
 
 
@@ -35,9 +36,7 @@ const Home=()=>{
     return(
         <React.Fragment>
             <div className="home">
-                <div className="search-sec">
-                    <input type="text" placeholder="search here...." />
-                </div>
+                <Search placeholder={"Search Coin here..."} width={"100%"}/>
                 <div className="main-sec">
                     {
                         tabs.length > 0 && tabs?.map((res)=>{

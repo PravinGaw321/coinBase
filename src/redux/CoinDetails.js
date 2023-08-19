@@ -3,7 +3,7 @@ import axios from "axios";
 import { API_URL, baseUrl } from "../apiUrl";
 
 export const Fetchcoindetail = createAsyncThunk('coin/fetchAsyncdetail', async(id)=>{
-    const responce = await axios.get(`${baseUrl + `/api/v3/coins/${id}`}`).catch((err)=>{
+    const responce = await axios.get(`${baseUrl + `api/v3/coins/${id}`}`).catch((err)=>{
         console.log('error', err);
     })
     
@@ -20,7 +20,9 @@ export const coinDetailSlice = createSlice({
     name:'coindetail',
     initialState: initialValue,
     reducers:{
-
+        removeCoindetail: (state)=>{
+            state.coindetail =[]
+        },
     },
     extraReducers:{
         [Fetchcoindetail.pending]: (state)=>{
@@ -35,4 +37,6 @@ export const coinDetailSlice = createSlice({
     }
 })
 
+
+export const {removeCoindetail} = coinDetailSlice.actions;
 export default coinDetailSlice.reducer;

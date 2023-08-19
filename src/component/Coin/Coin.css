@@ -21,36 +21,51 @@
     font-weight: 500;
 }
 .coinheading{
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 900;
     font-family: sans-serif;
     /* margin-bottom: 20px; */
 }
 .coinlist{
-    
+    margin-top: 20px;
+}
+.coinlist .coinheading{
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 .coinlist ul{
     font-size: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: 40px;
+    /* justify-content: space-between; */
+}
+.coinlist ul a.redirect-link{
+    width: 23%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: #ffffff;
 }
 .coinlist ul li{
     font-size: 14px;
     border: 2px solid #ffffff;
     padding: 10px 10px;
     box-sizing: border-box;
-    width: 23%;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 10px;
     /* text-align: center; */
 }
+.coinlist ul li:hover{
+    background-color: rgba(255,255,255,0.10);
+}
 .coinlist ul li .name{
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 700;
     text-align: center;
     display: inline-block;
+    width: 100%;
+    font-family: math;
 }
 .accordion{
     /* border: 1px solid #fff; */
@@ -59,16 +74,17 @@
 }
 .accordion .openbtn{
     width: 100%;
-    background-color: lightblue;
+    background-color: transparent;
     padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
+    border: 1px solid #ffffff;
     border-radius: 10px 10px 0px 0px;
 
 }
 .accordion .contentarea{
     width: 100%;
-    padding: 10px;
+    padding: 25px 10px 10px 10px;
     box-sizing: border-box;
     transition: "top 1s ease-in-out";
     border: 1px solid #fff;
@@ -76,13 +92,58 @@
 }
 
 .coinlist ul li .id{
-    font-size: 20px;
+    font-size: 14px;
     text-align: left;
     font-weight: 800;
+    text-transform: capitalize;
+    text-decoration: underline;
 }
 
 .coinlist ul li .symbol{
     text-align: center;
-    font-size: 19px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.skeleton{
+    /* width: 23%;
+    height: 25px;
+    background: gainsboro;
+    display: inline-block;
+    margin-left: 2%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skeleton .react-loading-skeleton{
+    width: 23%;
+    height: 120px;
+    background: #eaeaea;
+    display: inline-block;
+    margin-left: 2%;
+}
+.skeleton-category{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skeleton-category .react-loading-skeleton{
+    background: #eaeaea;
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.cate-loading{
+    display: flex;
+
+}
+
+.titleheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titleheader img{
+    transition: 0.3s all linear;
+}

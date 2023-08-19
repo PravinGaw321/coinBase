@@ -18,6 +18,7 @@ export const FetchcoinCategory = createAsyncThunk('coin/fetchAsyncCategory', asy
     return response.data;
 })
 
+
 const initialValue ={
     coinlistLoading: false,
     coinlistData: null,

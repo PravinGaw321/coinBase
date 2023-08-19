@@ -2,8 +2,7 @@ export const baseUrl = 'https://api.coingecko.com/';
 
 let id= null;
 export const API_URL ={
-    coin_list: 'api/v3/coins/list',
-    coin_info: `/api/v3/coins/${id}`,
+    coin_list: 'api/v3/coins/',
     // currency_coin: `/api/v3/coins/markets?vs_currency=${country}&order=market_cap_desc&per_page=100&page=1&sparkline=false`,
     coin_category_list: 'api/v3/coins/categories/list',
     nft_list: 'api/v3/nfts/list',
